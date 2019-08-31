@@ -1,0 +1,103 @@
+<!-- Written By Carsten -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+
+
+<title>Katalog</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<h2><center>Standardlager af stål</center></h2>
+
+<div id="topBar">
+<ul>
+  <li><a id="Hulprofiler" href="#Hulprofiler">Hulprofiler</a></li>
+  <li><a id="Rundstaal" href="#Rundstaal">Rund Stål</a></li>
+  <li><a id="Rundstål" href="#Hulprofiler">Firkantstål</a></li>
+  <li><a id="Valsede_profil_stål" href="#Hulprofiler">Valsede Profiler</a></li>
+  <li><a id="Plader" href="#Plader">Plader</a></li> 
+  <li><a id="Aluminium" href="#Aluminium">Aluminium</a></li> 
+</ul>
+   
+</div>
+
+<div id ="content">        
+</div>
+</body>
+
+<script>
+function removeClass()
+{
+$("a").removeClass('active');
+}
+$(document).ready( function() {
+var hash = window.location.hash;
+
+if(hash=='#Hulprofiler')
+{
+	removeClass();
+	$('#Hulprofiler').addClass('active');
+    $("#content").load("data/Hulprofiler/Hulprofiler.html", 'f' + (Math.random()*1000000));
+
+}
+if(hash=='#Rundstaal')
+{
+	removeClass();
+	$('#Rundstaal').addClass('active');
+    $("#content").load("data/Rundstaal/Rundstaal.html", 'f' + (Math.random()*1000000));
+
+}
+if(hash=='#Hulprofiler')
+{
+	removeClass();
+	$('#Hulprofiler').addClass('active');
+    $("#content").load("data/Hulprofiler/Hulprofiler.html", 'f' + (Math.random()*1000000));
+
+}
+
+    $("#Hulprofiler").on("click", function() {
+	removeClass();
+	$(this).addClass('active');
+        $("#content").load("data/Hulprofiler/Hulprofiler.html", 'f' + (Math.random()*1000000));
+		
+    });
+	    $("#Rundstaal").on("click", function() {
+		removeClass();
+		$(this).addClass('active');
+        $("#content").load("data/Rundstaal/Rundstaal.html", 'f' + (Math.random()*1000000));
+		
+    });
+	    $("#Rundstål").on("click", function() {
+        removeClass();
+		$(this).addClass('active');
+		$("#content").load("fane3.htm");
+		
+    });
+	    $("#Valsede_profil_stål").on("click", function() {
+		removeClass();
+		$(this).addClass('active');
+        $("#content").load("fane4.htm", 'f' + (Math.random()*1000000));
+		
+    });
+	    $("#Plader").on("click", function() {
+		removeClass();
+		$(this).addClass('active');        
+		$("#content").load("fane5.htm", 'f' + (Math.random()*1000000));
+		
+    });
+	
+	    $("#Aluminium").on("click", function() {
+		removeClass();
+		$(this).addClass('active');        
+		$("#content").load("fane5.htm");
+		
+    });
+});
+</script>
+
+</html>
