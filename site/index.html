@@ -27,7 +27,14 @@
         <!-- Application -->
         <div id="web-application">
             <!-- -->
-            <header class="overlay-color">
+            <header>
+                <div class="overlay-color" id="header-menu">
+
+                </div>
+
+                <div class="breadcrumbs">
+
+                </div>
 
             </header>
 
@@ -46,39 +53,33 @@
                     </h2>
                     <!-- Boundary for containers -->
                     <div class="showcase-containers">
-                        <!-- Show case product-->
-                        <div class="showcase-product">
-                            <div class="container-image">
-                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" alt="">
+
+                        <!-- For each products -->
+                        <div v-for="product in products">
+
+                            <!-- Boundary Product-->
+                            <div class="showcase-product">
+                                <div class="container-image">
+                                   <img v-bind:src="product.Preview"/>
+                                </div>
+                                
+                                <p class="container-title">
+                                    {{
+                                        product.Titel
+                                    }}
+                                </p>
+
+                                <p class="container-description">
+                                    {{
+                                        product.Description
+                                    }}
+                                </p>
+                                
+                                
                             </div>
 
-                            <p class="container-title">
-                                Hul profile 1
-                            </p>
                         </div>
 
-                         <!-- Show case product-->
-                        <div class="showcase-product">
-                            <div class="container-image">
-                                <img src="http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg" alt="">
-                            </div>
-
-                            <p class="container-title">
-                                Hul profile 2
-                            </p>
-                        </div>
-
-                         <!-- Show case product-->
-                        <div class="showcase-product">
-                            <div class="container-image">
-                                <img src="http://localhost/katalog/data/Hulprofiler/Billede_1.jpg" alt="">
-                            </div>
-
-                            <p class="container-title">
-                                Hul profile 3
-                            </p>
-                        </div>
-                          
                     </div>
 
                     <div class="button">

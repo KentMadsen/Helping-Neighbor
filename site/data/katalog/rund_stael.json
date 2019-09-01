@@ -2,7 +2,7 @@
     "products":
     [
         {
-            "name": "Rund stål",
+            "name": "Rund stål 1",
             "description": "",
             "images":
             [
@@ -20,6 +20,6 @@
             ],
             
             "preview":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
-        },   
+        }
     ]
 }
