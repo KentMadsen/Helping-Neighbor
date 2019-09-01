@@ -1,0 +1,35 @@
+{
+    "list":
+    [
+        {
+            "name":"Aluminium",
+            "url":""
+        },
+
+        {
+            "name":"Firkantstål",
+            "url":""
+        },
+
+        {
+            "name":"Hulprofiler",
+            "url":""
+        },
+
+        {
+            "name":"Plader",
+            "url":""
+        },
+
+        {
+            "name":"Rund stål",
+            "url":""
+        },
+
+        {
+            "name":"Valsede profiler",
+            "url":""
+        }
+
+    ]   
+}
