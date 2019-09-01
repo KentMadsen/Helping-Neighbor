@@ -10,6 +10,10 @@
 
         <meta http-equiv="X-UA-Compatible" 
               content="ie=edge">
+
+        <link rel="stylesheet" 
+              type="text/css" 
+              href="./style/style.css">
         
         <!-- Document Title-->
         <title>
@@ -23,22 +27,32 @@
         <!-- Application -->
         <div id="web-application">
             <!-- -->
-            <header>
+            <header class="overlay-color">
 
             </header>
 
             <!-- -->
             <main>
-
+                <h1>
+                    {{
+                        this.titel
+                    }}
+                </h1>
+                
+                
             </main>
 
             <!-- -->
-            <footer>
+            <footer class="overlay-color">
 
             </footer>
 
         </div>    
     </body>
+
+    <!-- Fonts used -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" 
+          rel="stylesheet">
 
     <!-- Scripts libraries used -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js">
