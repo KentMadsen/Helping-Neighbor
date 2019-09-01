@@ -1,34 +1,34 @@
 {
-    "list":
+    "products_list":
     [
         {
             "name":"Aluminium",
-            "url":""
+            "url":"./data/product/aluminium.json"
         },
 
         {
             "name":"Firkantstål",
-            "url":""
+            "url":"./data/product/firkant_stael.json"
         },
 
         {
             "name":"Hulprofiler",
-            "url":""
+            "url":"./data/product/hulprofiler.json"
         },
 
         {
             "name":"Plader",
-            "url":""
+            "url":"./data/product/plader.json"
         },
 
         {
             "name":"Rund stål",
-            "url":""
+            "url":"./data/product/rund_stael.json"
         },
 
         {
             "name":"Valsede profiler",
-            "url":""
+            "url":"./data/product/valsede_profiler.json"
         }
 
     ]   
