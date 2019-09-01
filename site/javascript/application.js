@@ -21,6 +21,7 @@ var application = new Vue
         
         data:
         {
+            products:null
 
         },
         
@@ -39,7 +40,8 @@ var application = new Vue
         {
             log_message('process started');
             
-            axios.get('./data/products.json').then(response=> (this.info = response) )
+            axios.get('./data/products.json').then( response => ( this.info = response ) )
+            console.log(this.info);
 
             log_message('process ended');
         }
