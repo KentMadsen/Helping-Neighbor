@@ -5,14 +5,40 @@ var global_debug = true
     // Parsing of content
 function parse_products( response_body )
 {
+    var x = 0;
+
+    // Retrieve individual products, in the katalogs
+    for( x = 0; 
+         x < response_body.products_list.length; 
+         x ++ )
+    {    
+        console.log( response_body.products_list[x] );
+
+        axios.get( response_body.products_list[x].url ).then( response => ( parse_product( response.data ) ) );
+    }
+
+};
+
+function parse_product( response_body )
+{
     console.log( response_body );
+
+
+    var x = 0;
+    
+    for( x = 0; 
+         x < response_body.products.length; 
+         x ++ )
+    {
+
+    }
 
 };
 
     // Debug
 function log_message( message )
 {
-    if (global_debug === false)
+    if ( global_debug === false )
     {
         return;
     }
@@ -39,7 +65,8 @@ var application = new Vue
         
         data:
         {
-            titel:'Standardlager af stål'
+            titel:'Standardlager af stål',
+            products:[]
 
         },
         

@@ -1,3 +1,67 @@
 {
-    
+    "products":
+    [
+        {
+            "name": "hulprofil 1",
+            "description": "",
+            "images":
+            [
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+                },
+
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg"
+                },
+
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg"
+                }
+            ],
+            
+            "preview":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+        },
+
+        {
+            "name": "hulprofil 2",
+            "description": "",
+            "images":
+            [
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+                },
+
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg"
+                },
+
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg"
+                }
+            ],
+            
+            "preview":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+        },
+
+        {
+            "name": "hulprofil 3",
+            "description": "",
+            "images":
+            [
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+                },
+
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg"
+                },
+
+                {
+                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg"
+                }
+            ],
+            
+            "preview":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+        }
+    ]
 }
