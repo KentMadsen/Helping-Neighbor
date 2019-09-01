@@ -3,32 +3,32 @@
     [
         {
             "name":"Aluminium",
-            "url":"./data/product/aluminium.json"
+            "url":"./data/katalog/aluminium.json"
         },
 
         {
             "name":"Firkantstål",
-            "url":"./data/product/firkant_stael.json"
+            "url":"./data/katalog/firkant_stael.json"
         },
 
         {
             "name":"Hulprofiler",
-            "url":"./data/product/hulprofiler.json"
+            "url":"./data/katalog/hulprofiler.json"
         },
 
         {
             "name":"Plader",
-            "url":"./data/product/plader.json"
+            "url":"./data/katalog/plader.json"
         },
 
         {
             "name":"Rund stål",
-            "url":"./data/product/rund_stael.json"
+            "url":"./data/katalog/rund_stael.json"
         },
 
         {
             "name":"Valsede profiler",
-            "url":"./data/product/valsede_profiler.json"
+            "url":"./data/katalog/valsede_profiler.json"
         }
 
     ]   

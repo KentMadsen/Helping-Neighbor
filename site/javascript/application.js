@@ -1,5 +1,22 @@
+// Application Functions
+    // Global Variables
+var global_debug = true
+
+    // Parsing of content
+function parse_products( response_body )
+{
+    console.log( response_body );
+
+};
+
+    // Debug
 function log_message( message )
 {
+    if (global_debug === false)
+    {
+        return;
+    }
+
     var today = new Date();
 
     console.log( today.getMilliseconds() + '.' + 
@@ -14,6 +31,7 @@ function log_message( message )
                  message );
 }
 
+// Application
 var application = new Vue
 (
     {
@@ -21,7 +39,7 @@ var application = new Vue
         
         data:
         {
-            products:null
+            titel:'Standardlager af stål'
 
         },
         
@@ -36,14 +54,14 @@ var application = new Vue
         },
 
         // Executes on startup
-        mounted: function()
+        mounted : function()
         {
-            log_message('process started');
+            log_message( 'bootstrap process started' );
             
-            axios.get('./data/products.json').then( response => ( this.info = response ) )
-            console.log(this.info);
+            axios.get('./data/products.json')
+                 .then( response => ( parse_products( response.data ) ) )
 
-            log_message('process ended');
+            log_message( 'bootstrap process ended' );
         }
     }
 );
