@@ -1,16 +1,7 @@
 // Application Functions
     // Global Variables
-var global_debug = true
-
-    // Parsing of content
-function parse_products( response_body )
-{
-    var x = 0;
-
-
-};
-
-
+var global_debug = true;
+var default_page = "home";
 
 // Application
 var application = new Vue
@@ -20,11 +11,42 @@ var application = new Vue
         
         data:
         {
-            titel:'Standardlager af stål',
-            breadcrumbs:[],
-            navigation:[]
-            
+            titel : 'Standardlager af stål',
 
+            breadcrumbs:[
+                {
+                    "url"  : "#",
+                    "name" : "Test",
+                    "alt"  : "nothing"
+                },
+
+                {
+                    "url"  : "#",
+                    "name" : "Test",
+                    "alt"  : "nothing"
+                }
+            ],
+
+            navigation:
+            [
+                {
+                    "name" : "Home",
+                    "alt"  : ""
+                },
+
+                {
+                    "name" : "About",
+                    "alt"  : ""
+                },
+
+                {
+                    "name" : "Katalog",
+                    "alt"  : ""
+                }
+            ],
+
+            currentPage: default_page,
+            
         },
         
         watch:
@@ -32,7 +54,27 @@ var application = new Vue
             
         },
 
+        computed:
+        {
+            
+
+        },
+
         methods:
+        {
+            selectPage( page )
+            {
+
+            }
+
+        },
+
+        created:
+        {
+
+        },
+
+        destroyed:
         {
 
         },
