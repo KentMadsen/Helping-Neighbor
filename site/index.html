@@ -28,7 +28,8 @@
         <div id="web-application">
             <!-- -->
             <header>
-                <div class="overlay-color" id="header-menu">
+                <div class="overlay-color" 
+                     id="header-menu">
 
                 </div>
 
@@ -46,52 +47,7 @@
                     }}
                 </h1>
                 
-                <!-- Boundary area -->
-                <div class="showcase-area">
-                    <h2>
-                        Hul profiler
-                    </h2>
-                    <!-- Boundary for containers -->
-                    <div class="showcase-containers">
-
-                        <!-- For each products -->
-                        <div v-for="product in products">
-
-                            <!-- Boundary Product-->
-                            <div class="showcase-product">
-                                <div class="container-image">
-                                   <img v-bind:src="product.Preview"/>
-                                </div>
-                                
-                                <p class="container-title">
-                                    {{
-                                        product.Titel
-                                    }}
-                                </p>
-
-                                <p class="container-description">
-                                    {{
-                                        product.Description
-                                    }}
-                                </p>
-                                
-                                
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="button">
-                        <a class="container-link" href="" hreflang="">
-                            <div class="button-cover">
-                                <p>
-                                    View More
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                
                 
             </main>
 

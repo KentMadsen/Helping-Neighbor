@@ -7,19 +7,22 @@
             "images":
             [
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg",
+                    "alt":""
                 },
 
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg",
+                    "alt":""
                 },
 
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg",
+                    "alt":""
                 }
             ],
             
-            "preview":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+            "preview":{"url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg", "alt":""}
         },
 
         {
@@ -28,19 +31,22 @@
             "images":
             [
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg",
+                    "alt":""
                 },
 
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg",
+                    "alt":""
                 },
 
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg",
+                    "alt":""
                 }
             ],
             
-            "preview":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+            "preview":{"url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg", "alt":""}
         },
 
         {
@@ -49,19 +55,22 @@
             "images":
             [
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg",
+                    "alt":""
                 },
 
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/Billede_1.jpg",
+                    "alt":""
                 },
 
                 {
-                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg"
+                    "url":"http://localhost/katalog/data/Hulprofiler/30_30_1.5.jpg",
+                    "alt":""
                 }
             ],
             
-            "preview":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg"
+            "preview":{"url":"http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg", "alt":""}
         }
     ]
 }
