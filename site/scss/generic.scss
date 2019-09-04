@@ -1,0 +1,28 @@
+.container-three-elements
+{
+    display: grid;
+    
+    grid-gap: 32px;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.container-three-elements .container 
+{
+    color:white;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.container-three-elements .container:first-child
+{
+    padding-left: 32px;
+}
+
+.container-three-elements .container:last-child
+{
+    padding-right: 32px;
+
+}

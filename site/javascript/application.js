@@ -1,35 +1,6 @@
 // Application Functions
     // Global Variables
-var global_debug = true
-
-    // Parsing of content
-function parse_products( response_body )
-{
-    console.log( response_body );
-
-};
-
-    // Debug
-function log_message( message )
-{
-    if (global_debug === false)
-    {
-        return;
-    }
-
-    var today = new Date();
-
-    console.log( today.getMilliseconds() + '.' + 
-                 today.getMinutes() + '.' + 
-                 today.getHours() + 
-                 
-                 ' ' + 
-                 
-                 today.getDate() + '-' +
-                 today.getMonth() + '-' +
-                 today.getFullYear() + ' : ' + 
-                 message );
-}
+var default_page = "home";
 
 // Application
 var application = new Vue
@@ -39,8 +10,61 @@ var application = new Vue
         
         data:
         {
-            titel:'Standardlager af stål'
+            pages:
+            {
+                primary:
+                [
 
+                ],
+
+                secondary:
+                [
+                    {
+                        title   : 'Terms of service',
+                        content : '',
+                        order   : 1
+                    },
+
+                    {
+                        title   : 'Made with',
+                        content : '',
+                        order   : 2
+                    }
+                ],
+
+                about:'No content'
+
+            },
+
+            breadcrumbs:
+            [
+                {
+                    "name" : "Home",
+                    "alt"  : ""
+                }
+                
+            ],
+
+            navigation:
+            [
+                {
+                    "name" : "Home",
+                    "alt"  : ""
+                },
+
+                {
+                    "name" : "About",
+                    "alt"  : ""
+                },
+
+                {
+                    "name" : "Katalog",
+                    "alt"  : ""
+                }
+            ],
+
+            currentPage: default_page,
+            
         },
         
         watch:
@@ -48,20 +72,32 @@ var application = new Vue
             
         },
 
+        computed:
+        {
+            
+
+        },
+
         methods:
+        {
+            
+
+        },
+
+        created:
+        {
+
+        },
+
+        destroyed:
         {
 
         },
 
         // Executes on startup
-        mounted : function()
-        {
-            log_message( 'bootstrap process started' );
+        mounted: function()
+        {   
             
-            axios.get('./data/products.json')
-                 .then( response => ( parse_products( response.data ) ) )
-
-            log_message( 'bootstrap process ended' );
         }
     }
 );

@@ -11,6 +11,7 @@
         <meta http-equiv="X-UA-Compatible" 
               content="ie=edge">
 
+        <!-- Style.css -->
         <link rel="stylesheet" 
               type="text/css" 
               href="./style/style.css">
@@ -27,24 +28,114 @@
         <!-- Application -->
         <div id="web-application">
             <!-- -->
-            <header class="overlay-color">
+            <header>
+                <div class="overlay-color" 
+                     id="header-menu">
+
+                     <!-- -->
+                     <ol id="navigation">
+                         <li v-for="button in navigation">
+                             <p>
+                                {{
+                                    button.name
+                                }}
+                             </p>
+                         </li>
+                     </ol>
+
+                </div>
+
+                <!-- -->
+                <div>
+                    <ol id="breadcrumb">
+                        <li v-for="crumb in breadcrumbs">
+                            <a v-bind:alt="crumb.alt">
+                                <p>
+                                    {{ 
+                                        crumb.name 
+                                    }}
+                                </p>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
 
             </header>
 
             <!-- -->
             <main>
-                <h1>
-                    {{
-                        this.titel
-                    }}
-                </h1>
+
+
+                
                 
                 
             </main>
 
             <!-- -->
-            <footer class="overlay-color">
+            <footer>
+                <div class="overlay-color">
+                    <div class="container-three-elements">
+                        <!-- -->
+                        <div class="container">
+                            <p>
+                                {{ 
+                                    pages.about 
+                                }}
+                            </p>
+                        </div>
 
+                        <!-- -->
+                        <div class="container">
+
+                            <ol id="footer-navigation">
+                                <li v-for="button in navigation">
+                                    <a class="container-link">
+                                        <p>
+                                            {{ 
+                                                button.name 
+                                            }}
+                                        </p>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <!-- -->
+                        <div class="container">
+                            <ol id="footer-categories-list">
+                                <a class="container-link">
+                                    <li>
+                                        <p>
+                                            A
+                                        </p>
+                                    </li>
+                                </a>
+
+                                <a class="container-link">
+                                    <li>
+                                        <p>
+                                            B
+                                        </p>
+                                    </li>
+                                </a>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <ol id="footer-misc">
+                        <li v-for="item in pages.secondary">
+                            <a class="container-link">
+                                {{
+                                    item.title
+                                }}
+                            </a>
+                        </li>
+
+                    </ol>
+                </div>
+                
             </footer>
 
         </div>    
@@ -53,6 +144,11 @@
     <!-- Fonts used -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" 
           rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
 
     <!-- Scripts libraries used -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js">
@@ -64,5 +160,6 @@
     <!-- Scripts execution order -->
     <script src="./javascript/application.js">
     </script>
+
 
 </html>

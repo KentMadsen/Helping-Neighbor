@@ -1,8 +1,10 @@
 //
+@import './template.scss';
+@import './generic.scss';
+
 body 
 {
-    margin: 0px;
-    padding: 0px;
+    @extend %no-space;
 }
 
 @import './header.scss';
