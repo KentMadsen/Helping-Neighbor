@@ -80,6 +80,12 @@ h4
     
 }
 
+p 
+{
+    font-family: 'Open Sans';
+    @extend %no-space;
+}
+
 .showcase-containers
 {
     

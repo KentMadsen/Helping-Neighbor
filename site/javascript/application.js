@@ -30,7 +30,9 @@ var application = new Vue
                         content : '',
                         order   : 2
                     }
-                ]
+                ],
+
+                about:'No content'
 
             },
 

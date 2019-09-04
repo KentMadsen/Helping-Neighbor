@@ -77,23 +77,48 @@
                     <div class="container-three-elements">
                         <!-- -->
                         <div class="container">
-                            
+                            <p>
+                                {{ 
+                                    pages.about 
+                                }}
+                            </p>
                         </div>
 
                         <!-- -->
                         <div class="container">
-                            <ol>
+
+                            <ol id="footer-navigation">
                                 <li v-for="button in navigation">
-                                    {{ 
-                                        button.name 
-                                    }}
+                                    <a class="container-link">
+                                        <p>
+                                            {{ 
+                                                button.name 
+                                            }}
+                                        </p>
+                                    </a>
                                 </li>
                             </ol>
                         </div>
 
                         <!-- -->
                         <div class="container">
-                            
+                            <ol id="footer-categories-list">
+                                <a class="container-link">
+                                    <li>
+                                        <p>
+                                            A
+                                        </p>
+                                    </li>
+                                </a>
+
+                                <a class="container-link">
+                                    <li>
+                                        <p>
+                                            B
+                                        </p>
+                                    </li>
+                                </a>
+                            </ol>
                         </div>
                     </div>
                 </div>

@@ -27,12 +27,73 @@ footer
     cursor: pointer;
     
     text-transform: uppercase;
-    font-family: 'Open Sans';
 
+    font-family: 'Open Sans';
 }
 
 #footer-misc .container-link:hover
 {
     color:#2ecc71;
     
+}
+
+#footer-categories-list
+{
+    margin: 0px;
+    padding:0px;
+}
+
+#footer-categories-list .container-link
+{
+    
+    color:#3498db;
+    
+    cursor: pointer;
+    
+    text-transform: uppercase;
+
+    font-family: 'Open Sans';
+}
+
+#footer-categories-list .container-link:hover 
+{
+    color:#2ecc71;
+}
+
+#footer-categories-list li
+{
+    list-style: none;
+
+}
+
+#footer-navigation
+{
+    margin:0px;
+    padding:0px;
+
+}
+
+#footer-navigation .container-link
+{
+     
+    color:#3498db;
+    
+    cursor: pointer;
+    
+    text-transform: uppercase;
+
+    font-family: 'Open Sans';
+    
+}
+
+#footer-navigation .container-link:hover
+{
+    
+    color:#2ecc71;
+
+}
+
+#footer-navigation li 
+{
+    list-style: none;
 }
