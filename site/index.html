@@ -126,10 +126,19 @@
                 <div>
                     <ol id="footer-misc">
                         <li v-for="item in pages.secondary">
-                            <a class="container-link">
-                                {{
-                                    item.title
+                            <p v-if="item.content_type==='text'">
+                                {{ 
+                                    item.title 
                                 }}
+                            </p>
+
+                            <a class="container-link" 
+                               v-if="item.content_type==='page'">
+                                <p>
+                                    {{
+                                        item.title
+                                    }}
+                                </p>
                             </a>
                         </li>
 
