@@ -26,7 +26,7 @@ var application = new Vue
                     },
 
                     {
-                        title   : 'About',
+                        title   : 'Made with',
                         content : '',
                         order   : 2
                     }

@@ -19,3 +19,20 @@ footer
 
     margin-right: 8px;
 }
+
+#footer-misc .container-link
+{
+    color:#3498db;
+    
+    cursor: pointer;
+    
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+
+}
+
+#footer-misc .container-link:hover
+{
+    color:#2ecc71;
+    
+}

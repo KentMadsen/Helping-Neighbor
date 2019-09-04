@@ -74,13 +74,34 @@
             <!-- -->
             <footer>
                 <div class="overlay-color">
+                    <div class="container-three-elements">
+                        <!-- -->
+                        <div class="container">
+                            
+                        </div>
 
+                        <!-- -->
+                        <div class="container">
+                            <ol>
+                                <li v-for="button in navigation">
+                                    {{ 
+                                        button.name 
+                                    }}
+                                </li>
+                            </ol>
+                        </div>
+
+                        <!-- -->
+                        <div class="container">
+                            
+                        </div>
+                    </div>
                 </div>
 
                 <div>
                     <ol id="footer-misc">
                         <li v-for="item in pages.secondary">
-                            <a>
+                            <a class="container-link">
                                 {{
                                     item.title
                                 }}

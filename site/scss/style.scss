@@ -1,11 +1,11 @@
 //
 @import './template.scss';
+@import './generic.scss';
 
 body 
 {
     @extend %no-space;
 }
-
 
 @import './header.scss';
 @import './footer.scss';
