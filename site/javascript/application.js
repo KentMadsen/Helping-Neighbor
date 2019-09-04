@@ -20,19 +20,30 @@ var application = new Vue
                 secondary:
                 [
                     {
+                        title : 'Copyright 2019',
+                        content_type : 'text',
+                        order: 0
+                    },
+                    {
                         title   : 'Terms of service',
-                        content : '',
+                        content_type : 'page',
                         order   : 1
                     },
 
                     {
-                        title   : 'Made with',
-                        content : '',
+                        title   : 'About',
+                        content_type : 'page',
                         order   : 2
+                    },
+
+                    {
+                        title   : 'Contact',
+                        content_type : 'page',
+                        order   : 3
                     }
                 ],
 
-                about:'No content'
+                about: 'No content'
 
             },
 

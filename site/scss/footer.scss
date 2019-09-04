@@ -11,6 +11,8 @@ footer
     display: flex;
     
     justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 #footer-misc li
@@ -18,6 +20,7 @@ footer
     list-style: none;
 
     margin-right: 8px;
+    margin-left: 8px;
 }
 
 #footer-misc .container-link
@@ -25,8 +28,12 @@ footer
     color:#3498db;
     
     cursor: pointer;
-    
+}
+
+#footer-misc p 
+{
     text-transform: uppercase;
+    font-size: 12px;
 
     font-family: 'Open Sans';
 }
@@ -45,7 +52,6 @@ footer
 
 #footer-categories-list .container-link
 {
-    
     color:#3498db;
     
     cursor: pointer;
@@ -53,6 +59,8 @@ footer
     text-transform: uppercase;
 
     font-family: 'Open Sans';
+    
+    text-align: center;
 }
 
 #footer-categories-list .container-link:hover 
@@ -64,6 +72,8 @@ footer
 {
     list-style: none;
 
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 #footer-navigation
@@ -73,8 +83,16 @@ footer
 
 }
 
+#footer-navigation li 
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+
 #footer-navigation .container-link
 {
+    text-align: center;
      
     color:#3498db;
     
