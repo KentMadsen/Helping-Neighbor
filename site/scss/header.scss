@@ -22,11 +22,22 @@ header
     list-style: none;
     margin: 0px;
     margin-left: 16px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 #breadcrumb li a 
 {
+    color:#3498db;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+}
 
+#breadcrumb li a:hover
+{
+    color:#2ecc71;
 }
 
 #breadcrumb li a p
@@ -64,4 +75,9 @@ header
     color: white;
     text-transform: uppercase;
     font-family: 'Open Sans';
+}
+
+#navigation li p:hover 
+{
+    color:#2ecc71;
 }

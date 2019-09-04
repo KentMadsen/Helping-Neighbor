@@ -1,6 +1,21 @@
 /* Footer Area */
 footer
 {
-    display: block;   
-    height: 100px;
+    display: block;
+}
+
+#footer-misc
+{
+    @extend %no-space;
+
+    display: flex;
+    
+    justify-content: center;
+}
+
+#footer-misc li
+{
+    list-style: none;
+
+    margin-right: 8px;
 }

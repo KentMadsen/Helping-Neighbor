@@ -49,8 +49,7 @@
                 <div>
                     <ol id="breadcrumb">
                         <li v-for="crumb in breadcrumbs">
-                            <a v-bind:href="crumb.url" 
-                               v-bind:alt="crumb.alt">
+                            <a v-bind:alt="crumb.alt">
                                 <p>
                                     {{ 
                                         crumb.name 
@@ -59,7 +58,6 @@
                             </a>
                         </li>
                     </ol>
-
                 </div>
 
             </header>
@@ -67,21 +65,31 @@
             <!-- -->
             <main>
 
-                <h1>
-                    {{
-                        this.titel
-                    }}
-                </h1>
 
-                
                 
                 
                 
             </main>
 
             <!-- -->
-            <footer class="overlay-color">
+            <footer>
+                <div class="overlay-color">
 
+                </div>
+
+                <div>
+                    <ol id="footer-misc">
+                        <li v-for="item in pages.secondary">
+                            <a>
+                                {{
+                                    item.title
+                                }}
+                            </a>
+                        </li>
+
+                    </ol>
+                </div>
+                
             </footer>
 
         </div>    

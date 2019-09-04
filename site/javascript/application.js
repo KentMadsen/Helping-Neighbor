@@ -1,6 +1,5 @@
 // Application Functions
     // Global Variables
-var global_debug = true;
 var default_page = "home";
 
 // Application
@@ -11,20 +10,37 @@ var application = new Vue
         
         data:
         {
-            titel : 'Standardlager af stål',
+            pages:
+            {
+                primary:
+                [
 
-            breadcrumbs:[
-                {
-                    "url"  : "#",
-                    "name" : "Test",
-                    "alt"  : "nothing"
-                },
+                ],
 
+                secondary:
+                [
+                    {
+                        title   : 'Terms of service',
+                        content : '',
+                        order   : 1
+                    },
+
+                    {
+                        title   : 'About',
+                        content : '',
+                        order   : 2
+                    }
+                ]
+
+            },
+
+            breadcrumbs:
+            [
                 {
-                    "url"  : "#",
-                    "name" : "Test",
-                    "alt"  : "nothing"
+                    "name" : "Home",
+                    "alt"  : ""
                 }
+                
             ],
 
             navigation:
@@ -62,10 +78,7 @@ var application = new Vue
 
         methods:
         {
-            selectPage( page )
-            {
-
-            }
+            
 
         },
 
