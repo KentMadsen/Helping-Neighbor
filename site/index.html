@@ -65,9 +65,23 @@
             <!-- -->
             <main>
 
+                <section v-if="currentPage === 'home' ">
+                    <h1>
+                        Home
+                    </h1>
+                </section>
 
+                <section v-if="currentPage === 'about' ">
+                    <h1>
+                        About
+                    </h1>
+                </section>
                 
-                
+                <section v-if="currentPage === 'catalog' ">
+                    <h1>
+                        katalog
+                    </h1>
+                </section>
                 
             </main>
 
@@ -167,6 +181,9 @@
     </script>
 
     <!-- Scripts execution order -->
+    <script src="./javascript/menu.js">
+    </script>
+
     <script src="./javascript/application.js">
     </script>
 

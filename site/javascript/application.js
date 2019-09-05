@@ -1,6 +1,28 @@
 // Application Functions
     // Global Variables
-var default_page = "home";
+var page_home = "home";
+var page_about = "about";
+var page_catalog = "catalog";
+
+    // 
+var default_page = page_home;
+
+function hasPreview( preview_url )
+{
+    if( preview_url === null )
+    {
+        return false;
+    }
+
+    if( preview_url === "" )
+    {
+        return false;
+    }
+
+    // Check if it's a url
+
+    return true;
+}
 
 // Application
 var application = new Vue
@@ -24,6 +46,7 @@ var application = new Vue
                         content_type : 'text',
                         order: 0
                     },
+
                     {
                         title   : 'Terms of service',
                         content_type : 'page',
