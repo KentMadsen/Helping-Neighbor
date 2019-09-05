@@ -1,0 +1,67 @@
+/* Rules for mobile */
+@media screen and ( max-width: 600px ) 
+{
+    .hidden-on-mobile
+    {
+        display: none;
+    }
+
+    .hidden-on-desktop
+    {
+        display: block;
+    }
+
+    .container-three-elements
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .container-three-elements .container
+    { 
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    #footer-misc
+    {
+        flex-direction: column;
+    }
+
+    #footer-misc li 
+    {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    #footer-misc li p
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #footer-about
+    {
+        text-align: center;
+    }
+}
+
+/* Rules for screens bigger, than mobile phones */
+@media screen and ( min-width: 600px )
+{
+    .hidden-on-desktop
+    {
+        display: none;
+    }
+
+    
+    .hidden-on-mobile
+    {
+        display: block;
+    }
+}

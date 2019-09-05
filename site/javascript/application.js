@@ -1,11 +1,9 @@
 // Application Functions
     // Global Variables
-var page_home = "home";
-var page_about = "about";
-var page_catalog = "catalog";
+var page_name_home = "home";
+var page_name_about = "about";
+var page_name_catalog = "catalog";
 
-    // 
-var default_page = page_home;
 
 function hasPreview( preview_url )
 {
@@ -24,6 +22,68 @@ function hasPreview( preview_url )
     return true;
 }
 
+// Web Application Area
+const page_home = 
+{
+    template: '<h1> home </h1>'
+}
+
+const page_search = 
+{
+    template: '<div> search </h1>'
+}
+
+const page_catalog = 
+{
+    template: '<h1> catalog </h1>'
+}
+
+const page_not_found = 
+{
+    template: '<h1> Page Not Found </h1>'
+}
+
+// About, Contact, Privacy, Terms of Service 
+const page_page = 
+{
+    template: '<h1> page </h1>'
+}
+
+const Routes =
+[
+    {
+        path: '/',
+        name:'home',
+        component: page_home
+    },
+
+    {
+        path: '/page',
+        //name:'',
+        component: page_page
+    },
+
+    {
+        path: './search',
+      //  name:'',
+        component: page_search
+    },
+
+    {
+        path: './catalog',
+        // name:'',
+        component: page_catalog
+    }
+]
+
+var router_component = new VueRouter(
+    {
+        Routes
+    }
+)
+
+Vue.use(router_component);
+
 // Application
 var application = new Vue
 (
@@ -32,6 +92,8 @@ var application = new Vue
         
         data:
         {
+            currentRoute: window.location.pathname,
+
             pages:
             {
                 primary:
@@ -54,13 +116,19 @@ var application = new Vue
                     },
 
                     {
-                        title   : 'About',
+                        title   : 'Privacy Policies',
+                        content_type : 'page',
+                        order   : 1
+                    },
+
+                    {
+                        title   : 'Om',
                         content_type : 'page',
                         order   : 2
                     },
 
                     {
-                        title   : 'Contact',
+                        title   : 'Kontakt',
                         content_type : 'page',
                         order   : 3
                     }
@@ -82,23 +150,30 @@ var application = new Vue
             navigation:
             [
                 {
-                    "name" : "Home",
+                    "name" : "Hjem",
                     "alt"  : ""
                 },
 
                 {
-                    "name" : "About",
+                    "name" : "Om",
                     "alt"  : ""
                 },
 
                 {
                     "name" : "Katalog",
                     "alt"  : ""
+                },
+
+                {
+                    "name" : "Kontakt",
+                    "alt"  : ""
+                },
+
+                {
+                    "name": "Search",
+                    "alt": ""
                 }
             ],
-
-            currentPage: default_page,
-            
         },
         
         watch:
@@ -108,10 +183,23 @@ var application = new Vue
 
         computed:
         {
+            /*
+            ViewCompunent()
+            {
+                return Routes[this.currentPage]
+            } */
             
 
         },
 
+        /* 
+        render(h)
+        {
+            return h;
+        }
+
+        */
+        /*
         methods:
         {
             
@@ -122,16 +210,17 @@ var application = new Vue
         {
 
         },
-
+        */
+/*
         destroyed:
         {
 
         },
 
-        // Executes on startup
+         Executes on startup
         mounted: function()
         {   
             
-        }
+        } */
     }
 );

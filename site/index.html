@@ -28,7 +28,7 @@
         <!-- Application -->
         <div id="web-application">
             <!-- -->
-            <header>
+            <header class="hidden-on-mobile">
                 <div class="overlay-color" 
                      id="header-menu">
 
@@ -64,24 +64,6 @@
 
             <!-- -->
             <main>
-
-                <section v-if="currentPage === 'home' ">
-                    <h1>
-                        Home
-                    </h1>
-                </section>
-
-                <section v-if="currentPage === 'about' ">
-                    <h1>
-                        About
-                    </h1>
-                </section>
-                
-                <section v-if="currentPage === 'catalog' ">
-                    <h1>
-                        katalog
-                    </h1>
-                </section>
                 
             </main>
 
@@ -90,7 +72,7 @@
                 <div class="overlay-color">
                     <div class="container-three-elements">
                         <!-- -->
-                        <div class="container">
+                        <div class="container" id="footer-about">
                             <p>
                                 {{ 
                                     pages.about 
@@ -175,6 +157,9 @@
 
     <!-- Scripts libraries used -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js">
+    </script>
+
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js">
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
