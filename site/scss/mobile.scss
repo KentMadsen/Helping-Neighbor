@@ -51,6 +51,26 @@
     }
 }
 
+@media screen and ( max-width: 920px )
+{
+    .container-three-elements
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .container-three-elements .container:first-child
+    { 
+        grid-column: span 2;
+    }
+
+    #footer-about
+    {
+        text-align: center;
+    }
+
+}
+
 /* Rules for screens bigger, than mobile phones */
 @media screen and ( min-width: 600px )
 {
