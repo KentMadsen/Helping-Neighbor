@@ -44,12 +44,31 @@
                         </ol>
 
                     </div>
+            </header>
 
+            <header class="hidden-on-desktop" 
+                    id="mobile-header">
+                    
+                <div class="overlay-color" 
+                     id="header-menu">
+
+                        <!-- -->
+                        <ol id="mobile-navigation">
+                            <li v-for="item in primary">
+                                <p>
+                                    {{
+                                        item.title
+                                    }} 
+                                </p>
+                            </li>
+                        </ol>
+
+                </div>
             </header>
             
             <main>
                 <h1>
-                    Oversigt over {{ selection }}
+                    {{ selection }}
                 </h1>
 
                 <div class="list">
@@ -109,6 +128,64 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="list">
+                        <div class="list-element">
+                            <div class="product">
+                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
+                                
+                                <p class="product-title">
+                                    Hul Profil 1
+                                </p>
+                                
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="list-element">
+                            <div class="product">
+                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
+                                
+                                <p class="product-title">
+                                    Hul Profil 1
+                                </p>
+                                
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="list-element">
+                            <div class="product">
+                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
+                                
+                                <p class="product-title">
+                                    Hul Profil 1
+                                </p>
+                                
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="list-element">
+                            <div class="product">
+                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
+                                
+                                <p class="product-title">
+                                    Hul Profil 1
+                                </p>
+                                
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
             </main>
 
             <footer>

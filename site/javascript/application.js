@@ -6,7 +6,7 @@ var application = new Vue
         
         data:
         {
-            selection:'alle produkter',
+            selection:'standardlager',
 
             primary:
             [
