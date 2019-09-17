@@ -1,4 +1,55 @@
 /* Rules for mobile */
+@media screen and ( max-width: 1200px )
+{
+    .list
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and ( max-width: 920px )
+{
+    .container-three-elements
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .container-three-elements .container:first-child
+    { 
+        grid-column: span 2;
+    }
+
+    #footer-about
+    {
+        text-align: center;
+    }
+}
+
+
+@media screen and ( max-width: 800px )
+{
+    #navigation
+    {
+        flex-direction: column row;
+        
+    }
+    
+    #navigation li
+    {
+        
+
+    }
+
+    .list
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
 @media screen and ( max-width: 600px ) 
 {
     .hidden-on-mobile
@@ -45,41 +96,6 @@
     }
 }
 
-@media screen and ( max-width: 800px )
-{
-    #navigation
-    {
-        flex-direction: column row;
-        
-    }
-    
-    #navigation li
-    {
-        
-
-    }
-
-}
-
-@media screen and ( max-width: 920px )
-{
-    .container-three-elements
-    {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .container-three-elements .container:first-child
-    { 
-        grid-column: span 2;
-    }
-
-    #footer-about
-    {
-        text-align: center;
-    }
-
-}
 
 /* Rules for screens bigger, than mobile phones */
 @media screen and ( min-width: 600px )
