@@ -3,11 +3,10 @@
     [
         {
             "name":"Hulprofil 1",
-            "producent":"y company",
-            "description":"Hulprofile x, y dimensioner",
 
-            "tags":["Hulprofil", "y company"],
             "categories":"Hul profiler",
+            
+            "hide":false,
 
             "images":
             [
@@ -27,24 +26,6 @@
                     "preview":null,
                     "image":"./images/hulprofil/3.jpg",
                     "image_type":"gallery"
-                },
-
-                {
-                    "preview":null,
-                    "image":"./images/hulprofil/4.jpg",
-                    "image_type":"gallery"
-                },
-
-                {
-                    "preview":null,
-                    "image":"./images/hulprofil/5.jpg",
-                    "image_type":"gallery"
-                },
-
-                {
-                    "preview":null,
-                    "image":"./images/hulprofil/6.jpg",
-                    "image_type":"gallery"
                 }
             ]
         },
@@ -53,6 +34,7 @@
             "name":"Rundstål 1",
             "producent":"z company",
             "description":"Hulprofile x, y dimensioner",
+            "hide":false,
 
             "tags":["Rundstål"],
             "categories":"Rundstål",

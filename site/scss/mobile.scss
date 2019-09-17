@@ -39,16 +39,26 @@
         margin-bottom: 4px;
     }
 
-    #footer-misc li p
-    {
-        margin: 0px;
-        padding: 0px;
-    }
-
     #footer-about
     {
         text-align: center;
     }
+}
+
+@media screen and ( max-width: 800px )
+{
+    #navigation
+    {
+        flex-direction: column row;
+        
+    }
+    
+    #navigation li
+    {
+        
+
+    }
+
 }
 
 @media screen and ( max-width: 920px )
