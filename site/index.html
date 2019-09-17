@@ -27,125 +27,97 @@
     <body>
         <!-- Application -->
         <div id="web-application">
-            <!-- -->
-            <header>
-                <div class="overlay-color" 
-                     id="header-menu">
-
-                     <!-- -->
-                     <ol id="navigation">
-                         <li v-for="button in navigation">
-                             <p>
-                                {{
-                                    button.name
-                                }}
-                             </p>
-                         </li>
-                     </ol>
-
-                </div>
-
-                <!-- -->
-                <div>
-                    <ol id="breadcrumb">
-                        <li v-for="crumb in breadcrumbs">
-                            <a v-bind:alt="crumb.alt">
-                                <p>
-                                    {{ 
-                                        crumb.name 
-                                    }}
-                                </p>
-                            </a>
-                        </li>
-                    </ol>
-                </div>
-
-            </header>
-
-            <!-- -->
-            <main>
-
-
-                
-                
-                
-            </main>
-
-            <!-- -->
-            <footer>
-                <div class="overlay-color">
-                    <div class="container-three-elements">
-                        <!-- -->
-                        <div class="container">
-                            <p>
-                                {{ 
-                                    pages.about 
-                                }}
-                            </p>
-                        </div>
+            
+            <header class="hidden-on-mobile">
+                    <div class="overlay-color" 
+                         id="header-menu">
 
                         <!-- -->
-                        <div class="container">
-
-                            <ol id="footer-navigation">
-                                <li v-for="button in navigation">
-                                    <a class="container-link">
-                                        <p>
-                                            {{ 
-                                                button.name 
-                                            }}
-                                        </p>
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-
-                        <!-- -->
-                        <div class="container">
-                            <ol id="footer-categories-list">
-                                <a class="container-link">
-                                    <li>
-                                        <p>
-                                            A
-                                        </p>
-                                    </li>
-                                </a>
-
-                                <a class="container-link">
-                                    <li>
-                                        <p>
-                                            B
-                                        </p>
-                                    </li>
-                                </a>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <ol id="footer-misc">
-                        <li v-for="item in pages.secondary">
-                            <p v-if="item.content_type==='text'">
-                                {{ 
-                                    item.title 
-                                }}
-                            </p>
-
-                            <a class="container-link" 
-                               v-if="item.content_type==='page'">
+                        <ol id="navigation">
+                            <li v-for="item in primary">
                                 <p>
                                     {{
                                         item.title
+                                    }} 
+                                </p>
+                            </li>
+                        </ol>
+
+                    </div>
+            </header>
+
+            <header class="hidden-on-desktop" 
+                    id="mobile-header">
+
+                <div class="overlay-color" 
+                     id="header-menu">
+
+                        <!-- -->
+                        <ol id="mobile-navigation">
+                            <li v-for="item in primary">
+                                <p>
+                                    {{
+                                        item.title
+                                    }} 
+                                </p>
+                            </li>
+                        </ol>
+
+                </div>
+            </header>
+            
+            <main>
+                <h1>
+                    {{ selection }}
+                </h1>
+
+                <div class="list">
+
+                    <template v-for='item in products'>
+                        <div class="list-element">
+                            <div class="product">
+                                <img v-bind:src="item.image" />
+                                        
+                                <p class="product-title">
+                                    {{ item.name }}        
+                                </p>
+                                        
+                                <p>
+                                    {{ item.description }}
+                                </p>
+                            </div>
+                        </div>
+                    </template>
+                    
+                    
+                </div>
+
+            </main>
+
+            <footer>
+                
+                    <div>
+                        <ol id="footer-misc">
+                            <li v-for="item in pages.secondary">
+                                <p v-if="item.content_type==='text'">
+                                    {{ 
+                                        item.title 
                                     }}
                                 </p>
-                            </a>
-                        </li>
-
-                    </ol>
-                </div>
-                
-            </footer>
+            
+                                <a class="container-link" 
+                                   v-if="item.content_type==='page'">
+                                    <p>
+                                        {{
+                                            item.title
+                                        }}
+                                    </p>
+                                </a>
+                            </li>
+            
+                        </ol>
+                    </div>
+                </footer>
 
         </div>    
     </body>
@@ -167,8 +139,16 @@
     </script>
 
     <!-- Scripts execution order -->
-    <script src="./javascript/application.js">
+    <script src="./javascript/menu.js">
+    </script>
+    
+    <script src="./javascript/header-navigation.js">
     </script>
 
+    <script src="./javascript/footer-navigation.js">
+    </script>
+
+    <script src="./javascript/application.js">
+    </script>
 
 </html>

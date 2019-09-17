@@ -1,8 +1,18 @@
-// Application Functions
-    // Global Variables
-var default_page = "home";
-
 // Application
+function parse_data( data )
+{
+    var i = 0;
+
+    for( i = 0; 
+         i < data.products.length; 
+         i++)
+    {
+        console.log(data.products[i])
+
+    }
+}
+
+
 var application = new Vue
 (
     {
@@ -10,72 +20,67 @@ var application = new Vue
         
         data:
         {
+            selection:'standardlager',
+
+            products:
+            [
+                
+            ],
+
+            primary:
+            [
+                {
+                    title:'Hulprofiler'
+                },
+
+                {
+                    title:'Rundstål'
+                },
+                
+                {
+                    title:'Firkantstål'
+                },
+                
+                {
+                    title: 'Valsede Profiler'
+                },
+                
+                {
+                    title: 'Plader'
+                },
+
+                {
+                    title: 'Aluminium'
+                }
+
+            ],
+
             pages:
             {
-                primary:
-                [
-
-                ],
-
                 secondary:
                 [
                     {
                         title : 'Copyright 2019',
                         content_type : 'text',
                         order: 0
-                    },
+                    } /*,
+
                     {
                         title   : 'Terms of service',
                         content_type : 'page',
                         order   : 1
-                    },
+                    },*/
 
-                    {
-                        title   : 'About',
+                    /*{
+                        title   : 'Privacy Policies',
                         content_type : 'page',
-                        order   : 2
-                    },
+                        order   : 1
+                    },*/
 
-                    {
-                        title   : 'Contact',
-                        content_type : 'page',
-                        order   : 3
-                    }
                 ],
 
                 about: 'No content'
-
             },
-
-            breadcrumbs:
-            [
-                {
-                    "name" : "Home",
-                    "alt"  : ""
-                }
-                
-            ],
-
-            navigation:
-            [
-                {
-                    "name" : "Home",
-                    "alt"  : ""
-                },
-
-                {
-                    "name" : "About",
-                    "alt"  : ""
-                },
-
-                {
-                    "name" : "Katalog",
-                    "alt"  : ""
-                }
-            ],
-
-            currentPage: default_page,
-            
         },
         
         watch:
@@ -83,8 +88,9 @@ var application = new Vue
             
         },
 
-        computed:
+        computed: 
         {
+            
             
 
         },
@@ -99,16 +105,29 @@ var application = new Vue
         {
 
         },
-
+  
         destroyed:
         {
 
         },
 
-        // Executes on startup
-        mounted: function()
-        {   
-            
-        }
+        mounted : function()
+        {
+            console.log('Mounted')
+
+            axios.get('./data/products.json').then(resp => {
+                var i = 0;
+
+                for(i = 0; i < resp.data.products.length; i++)
+                {
+                    this.products.push(resp.data.products[i])
+                }
+
+                
+                console.log(this.products);
+            });
+        } 
     }
 );
+
+console.log(application)
