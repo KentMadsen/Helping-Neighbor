@@ -48,7 +48,7 @@
 
             <header class="hidden-on-desktop" 
                     id="mobile-header">
-                    
+
                 <div class="overlay-color" 
                      id="header-menu">
 
@@ -72,120 +72,26 @@
                 </h1>
 
                 <div class="list">
-                    <div class="list-element">
-                        <div class="product">
-                            <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                            
-                            <p class="product-title">
-                                Hul Profil 1
-                            </p>
-                            
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                            </p>
+
+                    <template v-for='item in products'>
+                        <div class="list-element">
+                            <div class="product">
+                                <img v-bind:src="item.image" />
+                                        
+                                <p class="product-title">
+                                    {{ item.name }}        
+                                </p>
+                                        
+                                <p>
+                                    {{ item.description }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </template>
                     
-                    <div class="list-element">
-                        <div class="product">
-                            <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                            
-                            <p class="product-title">
-                                Hul Profil 1
-                            </p>
-                            
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="list-element">
-                        <div class="product">
-                            <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                            
-                            <p class="product-title">
-                                Hul Profil 1
-                            </p>
-                            
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="list-element">
-                        <div class="product">
-                            <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                            
-                            <p class="product-title">
-                                Hul Profil 1
-                            </p>
-                            
-                            <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
 
-                <div class="list">
-                        <div class="list-element">
-                            <div class="product">
-                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                                
-                                <p class="product-title">
-                                    Hul Profil 1
-                                </p>
-                                
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="list-element">
-                            <div class="product">
-                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                                
-                                <p class="product-title">
-                                    Hul Profil 1
-                                </p>
-                                
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                                </p>
-                            </div>
-                        </div>
-    
-                        <div class="list-element">
-                            <div class="product">
-                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                                
-                                <p class="product-title">
-                                    Hul Profil 1
-                                </p>
-                                
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                                </p>
-                            </div>
-                        </div>
-    
-                        <div class="list-element">
-                            <div class="product">
-                                <img src="http://localhost/katalog/data/Hulprofiler/info_kvardratisk_profil_large.jpg" />
-                                
-                                <p class="product-title">
-                                    Hul Profil 1
-                                </p>
-                                
-                                <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit eget augue ac maximus. Curabitur et odio tristique, vestibulum sapien at, facilisis metus. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
             </main>
 
             <footer>

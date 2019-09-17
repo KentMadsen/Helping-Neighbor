@@ -1,4 +1,18 @@
 // Application
+function parse_data( data )
+{
+    var i = 0;
+
+    for( i = 0; 
+         i < data.products.length; 
+         i++)
+    {
+        console.log(data.products[i])
+
+    }
+}
+
+
 var application = new Vue
 (
     {
@@ -7,6 +21,11 @@ var application = new Vue
         data:
         {
             selection:'standardlager',
+
+            products:
+            [
+                
+            ],
 
             primary:
             [
@@ -94,7 +113,21 @@ var application = new Vue
 
         mounted : function()
         {
-            
+            console.log('Mounted')
+
+            axios.get('./data/products.json').then(resp => {
+                var i = 0;
+
+                for(i = 0; i < resp.data.products.length; i++)
+                {
+                    this.products.push(resp.data.products[i])
+                }
+
+                
+                console.log(this.products);
+            });
         } 
     }
 );
+
+console.log(application)

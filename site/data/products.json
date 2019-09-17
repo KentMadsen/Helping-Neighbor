@@ -3,50 +3,14 @@
     [
         {
             "name":"Hulprofil 1",
+            "description": "Axios is a promise based HTTP client for the browser and Node.js. Axios makes it easy to send asynchronous HTTP requests to REST endpoints and perform CRUD operations. It can be used in plain JavaScript or with a library such as Vue or React. ",
 
             "categories":"Hul profiler",
             
             "hide":false,
+            
+            "image":"./images/hulprofil/1.jpg"
 
-            "images":
-            [
-                {
-                    "preview":null,
-                    "image":"./images/hulprofil/1.jpg",
-                    "image_type":"avatar"
-                },
-                
-                {
-                    "preview":null,
-                    "image":"./images/hulprofil/2.jpg",
-                    "image_type":"gallery"
-                },
-
-                {
-                    "preview":null,
-                    "image":"./images/hulprofil/3.jpg",
-                    "image_type":"gallery"
-                }
-            ]
-        },
-
-        {
-            "name":"Rundstål 1",
-            "producent":"z company",
-            "description":"Hulprofile x, y dimensioner",
-            "hide":false,
-
-            "tags":["Rundstål"],
-            "categories":"Rundstål",
-
-            "images":
-            [
-                {
-                    "preview":"",
-                    "image":"./images/rundstael/1.jpg"
-                }
-            ]
         }
-        
     ]      
 }
