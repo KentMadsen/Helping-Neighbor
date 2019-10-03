@@ -11,6 +11,17 @@
             
             "image":"./images/hulprofil/1.jpg"
 
+        },
+
+        {
+            "name":"Rundstål 1",
+            "description":"Hulprofile x, y dimensioner",
+
+            "hide":false,
+
+            "categories":"Rundstål",
+
+            "image":"./images/rundstael/1.jpg"
         }
     ]      
 }

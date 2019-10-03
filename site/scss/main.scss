@@ -45,7 +45,6 @@ main
 
 .product 
 {
-    padding-top: 8px;
     width: 100%;
     
     display: grid;
@@ -54,25 +53,65 @@ main
     grid-gap: 8px;
 }
 
-.product img 
+.image-frame
+{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.product
 {
     width: 75%;
-
-    max-height: 300px;
 
     margin-left: auto;
     margin-right: auto;
 
+    transition-duration: 200ms;
+}
+
+.product:hover .image-frame .normal
+{
+    display: none;
     
     transition-duration: 200ms;
 }
 
-.product:hover img
-{
-    width: calc(100% - 16px);
 
+.product .image-frame .zoomed
+{   
     transition-duration: 200ms;
+    display: none;
 }
+
+
+.product:hover .image-frame .zoomed
+{
+    display: block;
+
+}
+
+.product:hover .image-frame .zoomed img 
+{
+    z-index: 20;
+    
+    position: absolute;
+
+    width: 200%;
+    height: 600px;
+    
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product .image-frame .normal img
+{
+    width: 100%;
+    height: 300px;
+}
+
 
 .product p:first-child
 {

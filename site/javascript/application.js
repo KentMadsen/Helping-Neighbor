@@ -27,7 +27,7 @@ var application = new Vue
                 
             ],
 
-            primary:
+            categories:
             [
                 {
                     title:'Hulprofiler'
@@ -63,19 +63,7 @@ var application = new Vue
                         title : 'Copyright 2019',
                         content_type : 'text',
                         order: 0
-                    } /*,
-
-                    {
-                        title   : 'Terms of service',
-                        content_type : 'page',
-                        order   : 1
-                    },*/
-
-                    /*{
-                        title   : 'Privacy Policies',
-                        content_type : 'page',
-                        order   : 1
-                    },*/
+                    } 
 
                 ],
 

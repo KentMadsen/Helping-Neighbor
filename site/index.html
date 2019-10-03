@@ -34,7 +34,7 @@
 
                         <!-- -->
                         <ol id="navigation">
-                            <li v-for="item in primary">
+                            <li v-for="item in categories">
                                 <p>
                                     {{
                                         item.title
@@ -54,7 +54,7 @@
 
                         <!-- -->
                         <ol id="mobile-navigation">
-                            <li v-for="item in primary">
+                            <li v-for="item in categories">
                                 <p>
                                     {{
                                         item.title
@@ -76,7 +76,16 @@
                     <template v-for='item in products'>
                         <div class="list-element">
                             <div class="product">
-                                <img v-bind:src="item.image" />
+                                <div class="image-frame">
+                                    <div class="normal">
+                                        <img v-bind:src="item.image" />
+                                    </div>
+                                    
+                                    <div class="zoomed">
+                                        <img v-bind:src="item.image" />
+                                    </div>
+
+                                </div>
                                         
                                 <p class="product-title">
                                     {{ item.name }}        
